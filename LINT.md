@@ -26,13 +26,12 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/require-default-props": "off",
-    "react/prefer-stateless-function": 0,
     "max-len": [
       "warn",
       {
-        "code": 80,
+        "code": 200,
         "tabWidth": 2,
-        "comments": 80,
+        "comments": 200,
         "ignoreComments": false,
         "ignoreTrailingComments": true,
         "ignoreUrls": true,
@@ -40,9 +39,13 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ]
+    ],
+
+    "react/prefer-stateless-function": 0,
+    "react/destructuring-assignment": [true, { "extensions": [".jsx"] }]
   }
 }
+
 ```
 
 ### .prettierrc.json

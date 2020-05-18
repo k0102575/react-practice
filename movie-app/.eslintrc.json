@@ -11,7 +11,6 @@
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/require-default-props": "off",
-    "react/prefer-stateless-function": 0,
     "max-len": [
       "warn",
       {
@@ -25,6 +24,9 @@
         "ignoreTemplateLiterals": true,
         "ignoreRegExpLiterals": true
       }
-    ]
+    ],
+
+    "react/prefer-stateless-function": 0,
+    "react/destructuring-assignment": [true, { "extensions": [".jsx"] }]
   }
 }
