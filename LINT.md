@@ -61,3 +61,5 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 "editor.formatOnSave": true
 ```
+
+git config --global core.autocrlf false
