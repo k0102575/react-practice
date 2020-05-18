@@ -25,6 +25,8 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/require-default-props": "off",
+    "react/prefer-stateless-function": 0,
     "max-len": [
       "warn",
       {
