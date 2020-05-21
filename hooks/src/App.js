@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import UseTabs from './UseTabs';
+import UseInput from './UseInput';
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log('useEffect');
-    return () => {
-      console.log(count);
-    };
-  }, []);
-
+const App = () => {
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <UseInput />
+      <br />
+      <br />
+      <br />
+      <br />
+      <UseTabs />
     </div>
   );
-}
+};
 
 export default App;
