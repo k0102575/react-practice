@@ -12,15 +12,20 @@ import {
 const App = () => {
   return (
     <div>
-      <UseInput />
+      <UseClick />
       <br />
-      <UseTabs />
+      <UseConfirm />
       <br />
       <UseEffect />
       <br />
+      <UseInput />
+      <br />
+      <UsePreventLeave />
+      <br />
+      <UseTabs />
+      <br />
       <UseTitle />
       <br />
-      <UseClick />
     </div>
   );
 };
