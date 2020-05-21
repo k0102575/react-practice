@@ -3,6 +3,7 @@ import UseTabs from './UseTabs';
 import UseInput from './UseInput';
 import UseEffect from './UseEffect';
 import UseTitle from './UseTitle';
+import UseClick from './UseClick';
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
       <br />
       <br />
       <UseTitle />
+      <br />
+      <br />
+      <UseClick />
     </div>
   );
 };
