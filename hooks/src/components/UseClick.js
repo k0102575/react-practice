@@ -22,7 +22,9 @@ function UseClick() {
 
   return (
     <div>
+      <h3>UseClick</h3>
       <h1 ref={title}>Hi</h1>
+      <hr />
     </div>
   );
 }

@@ -29,12 +29,14 @@ const UseInput = () => {
 
   return (
     <div>
+      <h3>UseTabs</h3>
       {content.map((section, index) => (
         <button key={index} onClick={() => changeItem(index)}>
           {section.tab}
         </button>
       ))}
       <div>{currentItem.content}</div>
+      <hr />
     </div>
   );
 };

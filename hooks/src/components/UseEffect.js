@@ -10,8 +10,10 @@ export default function UseEffect() {
 
   return (
     <div>
+      <h3>UseEffect</h3>
       <button onClick={() => setNumberOne(numberOne + 1)}>{numberOne}</button>
       <button onClick={() => setNumberTwo(numberTwo + 1)}>{numberTwo}</button>
+      <hr />
     </div>
   );
 }

@@ -20,7 +20,9 @@ export default function UseInput() {
 
   return (
     <div>
+      <h3>UseInput</h3>
       <input placeholder="Name" {...name} />
+      <hr />
     </div>
   );
 }
