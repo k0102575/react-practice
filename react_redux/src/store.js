@@ -16,7 +16,7 @@ export const todoDelete = (id) => {
   };
 };
 
-const reducer = (state = [], action) => {
+const reducer = (state = ["test"], action) => {
   switch (action.type) {
     case ADD:
       return [todoAdd(action.text), ...state];
