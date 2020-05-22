@@ -4,6 +4,7 @@ import {
   UseConfirm,
   UseEffect,
   UseInput,
+  UseNetwork,
   UsePreventLeave,
   UseTabs,
   UseTitle,
@@ -19,6 +20,8 @@ const App = () => {
       <UseEffect />
       <br />
       <UseInput />
+      <br />
+      <UseNetwork />
       <br />
       <UsePreventLeave />
       <br />
