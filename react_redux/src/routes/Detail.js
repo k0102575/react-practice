@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { actionCreators } from "../store";
+import { remove } from "../store";
 
 function Detail({ history, toDo, deleteTodo }) {
   if (toDo === undefined) history.push("/");
@@ -32,7 +32,7 @@ function mapDispatchToProps(dispatch, ownProps) {
 
   return {
     deleteTodo: () => {
-      dispatch(actionCreators.deleteTodo(id));
+      dispatch(remove(id));
       history.push("/");
     },
   };
