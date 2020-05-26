@@ -1,5 +1,27 @@
 import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import theme from "./theme";
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <Container>
+        <GlobalStyle />
+        <Form />
+      </Container>
+    </ThemeProvider>
+  );
+}
+
+const Card = styled.div`
+  background-color: white;
+`;
+
+const Button = styled.button`
+  border-radius: 30px;
+  padding: 25px 15px;
+  background-color: ${(props) => props.theme.successColor};
+`;
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -8,42 +30,18 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-function App() {
-  return (
-    <Container>
-      <GlobalStyle />
-      <Button success>Success</Button>
-      <Button danger>Danger</Button>
-      <Anchor href="http://naver.com">Go to Naver</Anchor>
-    </Container>
-  );
-}
-
 const Container = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #ecf0f1;
 `;
 
-const Button = styled.button`
-  border-radius: 50px;
-  padding: 5px;
-  min-width: 120px;
-  color: white;
-  font-weight: 600;
-  -webkit-appearance: none;
-  cursor: pointer;
-  outline: none;
-  &:active,
-  &:focus {
-    outline: none;
-  }
-
-  background-color: ${(props) => (props.danger ? "#e74c3c" : "#2ecc71")};
-`;
-
-const Anchor = styled(Button.withComponent("a"))`
-  text-decoration: none;
-`;
+const Form = () => {
+  return (
+    <Card>
+      <Button>Hello</Button>
+    </Card>
+  );
+};
 
 export default App;
