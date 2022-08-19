@@ -12,6 +12,8 @@ React.js Practice
 
 - movie-app 코스
 
+- movie graphql 코스
+
 - react redux 코스
 
 - vanila redux 코스
